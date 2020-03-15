@@ -29,6 +29,28 @@
                 </header>
         </contexto>
 
+        <section class="index-banner">
+                <contexto>
+                        <div class="index-banner__container">
+                                <div class="index-banner__col">
+                                        <div class="index-banner__texto">
+                                                <p>Consultoria</p>
+                                        </div>
+                                        <div class="index-banner__texto">
+                                                <p>Compra</p>
+                                        </div>
+                                        <div class="index-banner__texto">
+                                                <p> Venda</p>
+                                        </div>
+                                        <div class="index-banner__texto">
+                                              <p> contato@rmveiculosespeciais.com.br</p>
+                                        </div>
+                                </div>
+                                <div class="index-banner__carro"></div>
+                        </div>
+                </contexto>
+        </section>
+
 
         <script src="js/menu.js"></script>
 
