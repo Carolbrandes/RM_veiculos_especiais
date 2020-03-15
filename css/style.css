@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'oswald-regular';
+  src: url("../componentes/fontes/oswald/static/Oswald-Regular.ttf"); }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "oswald-regular"; }
+
+html, body {
+  height: 100%; }
+
+contexto {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 2%;
+  border: 1px solid red;
+  /* mobile*/ }
+  @media screen and (max-width: 414px) {
+    contexto {
+      width: 100%;
+      padding: 3%; } }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 0;
+  /* ipad */
+  /* mobile*/ }
+  @media screen and (max-width: 768px) {
+    header {
+      flex-wrap: wrap;
+      justify-content: center; } }
+  @media screen and (max-width: 414px) {
+    header {
+      justify-content: space-between; } }
+  header .menu-mobile {
+    display: none;
+    /* mobile*/ }
+    @media screen and (max-width: 414px) {
+      header .menu-mobile {
+        display: block; }
+        header .menu-mobile img {
+          cursor: pointer; } }
+  header .menu {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    /* ipad pro*/
+    /* ipad */
+    /* mobile*/ }
+    @media screen and (max-width: 1024px) {
+      header .menu {
+        width: 70%; } }
+    @media screen and (max-width: 768px) {
+      header .menu {
+        width: 100%;
+        justify-content: center;
+        margin-top: 2%; } }
+    @media screen and (max-width: 414px) {
+      header .menu {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 15%;
+        left: 0;
+        padding: 2% 0;
+        background-color: #eb3f2a; } }
+    header .menu a {
+      color: #000;
+      font-style: italic;
+      font-size: 18px;
+      padding: 2%;
+      text-decoration: none;
+      /* mobile*/ }
+      @media screen and (max-width: 414px) {
+        header .menu a {
+          display: block;
+          margin-bottom: 2%;
+          color: #fff;
+          font-size: 22px;
+          text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */

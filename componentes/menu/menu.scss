@@ -1,0 +1,78 @@
+header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1% 0;
+
+          /* ipad */
+          @media screen and (max-width: 768px){
+                flex-wrap: wrap;
+                justify-content: center;
+        }
+
+          /* mobile*/
+          @media screen and (max-width: 414px){
+               justify-content: space-between;
+        }
+
+        .menu-mobile{
+                display: none;
+
+                /* mobile*/
+                @media screen and (max-width: 414px){
+                        display: block;
+
+                        img{
+                                cursor: pointer;
+                        }
+                }
+
+        }
+
+        .menu{
+                width: 60%;
+                display: flex;
+                justify-content: flex-end;
+
+                /* ipad pro*/
+                @media screen and (max-width: 1024px){
+                        width: 70%;
+                }
+
+                 /* ipad */
+                 @media screen and (max-width: 768px){
+                        width: 100%;
+                        justify-content: center;
+                        margin-top: 2%;
+                }
+
+                /* mobile*/
+                @media screen and (max-width: 414px){
+                        display: none;
+                        width: 100%;
+                        position: absolute;
+                        top: 15%;
+                        left:0;
+                        padding: 2% 0;
+                        background-color: $vermelho;
+                }
+
+                a{
+                        color: #000;
+                        font-style: italic;
+                        font-size: 18px;
+                        padding: 2%;
+                        text-decoration: none;
+
+                        /* mobile*/
+                        @media screen and (max-width: 414px){
+                                display: block;
+                               margin-bottom: 2%;
+                               color: #fff;
+                               font-size: 22px;
+                               text-align: center;
+                        }
+                }
+        }
+        
+}

@@ -1,0 +1,25 @@
+*{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        font-family: "oswald-regular";
+}
+
+html, body{
+        height: 100%;
+}
+
+contexto{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 2%;
+        border: 1px solid red;
+
+          /* mobile*/
+          @media screen and (max-width: 414px){
+                width: 100%;
+                padding: 3%;
+        
+        }
+}
