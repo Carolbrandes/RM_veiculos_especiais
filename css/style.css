@@ -28,7 +28,8 @@ header {
   align-items: center;
   padding: 1% 0;
   /* ipad */
-  /* mobile*/ }
+  /* mobile*/
+  /* mobile iphone 5*/ }
   @media screen and (max-width: 768px) {
     header {
       flex-wrap: wrap;
@@ -36,14 +37,22 @@ header {
   @media screen and (max-width: 414px) {
     header {
       justify-content: space-between; } }
+  @media screen and (max-width: 320px) {
+    header {
+      width: 100vw; } }
   header .menu-mobile {
     display: none;
-    /* mobile*/ }
+    /* mobile*/
+    /* mobile iphone 5*/ }
     @media screen and (max-width: 414px) {
       header .menu-mobile {
         display: block; }
         header .menu-mobile img {
           cursor: pointer; } }
+    @media screen and (max-width: 320px) {
+      header .menu-mobile {
+        position: relative;
+        left: -10%; } }
   header .menu {
     width: 60%;
     display: flex;
@@ -85,7 +94,11 @@ header {
 
 .index-banner {
   background-color: #000;
-  padding: 2% 0; }
+  padding: 2% 0;
+  /* mobile iphone 5*/ }
+  @media screen and (max-width: 320px) {
+    .index-banner {
+      width: 100vw; } }
   .index-banner__container {
     display: flex;
     justify-content: flex-end;
@@ -102,6 +115,14 @@ header {
     padding: 2% 15% 3%;
     margin-bottom: 3%;
     display: flex; }
+    @media screen and (max-width: 768px) {
+      .index-banner__texto {
+        position: relative;
+        left: -40%; } }
+    @media screen and (max-width: 414px) {
+      .index-banner__texto {
+        left: -20%;
+        top: -80px; } }
     .index-banner__texto:nth-of-type(2) {
       width: 60%; }
     .index-banner__texto:nth-of-type(3) {
@@ -109,10 +130,19 @@ header {
     .index-banner__texto:last-of-type {
       width: 90%;
       min-width: 240px;
-      background-image: url("../imagens/box-white-text.png"); }
+      background-image: url("../imagens/box-white-text.png");
+      /* mobile iphone 5*/ }
       .index-banner__texto:last-of-type p {
         color: #000;
-        font-size: 20px; }
+        font-size: 20px;
+        /* mobile iphone 5*/ }
+        @media screen and (max-width: 320px) {
+          .index-banner__texto:last-of-type p {
+            position: relative;
+            left: -25%; } }
+      @media screen and (max-width: 320px) {
+        .index-banner__texto:last-of-type {
+          width: 75%; } }
     .index-banner__texto p {
       color: #fff;
       font-size: 22px; }
@@ -122,5 +152,12 @@ header {
     background-image: url("../imagens/bg.jpg");
     background-size: contain;
     background-repeat: no-repeat; }
+    @media screen and (max-width: 768px) {
+      .index-banner__carro {
+        width: 75%;
+        background-size: cover; } }
+    @media screen and (max-width: 414px) {
+      .index-banner__carro {
+        width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
