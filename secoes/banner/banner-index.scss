@@ -20,7 +20,7 @@
         }
 
         &__texto{
-                width: 70%;
+                width: 90%;
                 height: 8%;
                 background-image: url("../imagens/box-text.png");
                 background-size: cover;
@@ -41,11 +41,11 @@
 
 
                 &:nth-of-type(2){
-                        width: 60%;
+                        width: 80%;
                 }
 
                 &:nth-of-type(3){
-                        width: 50%;
+                        width: 70%;
                 }
 
                 &:last-of-type{
