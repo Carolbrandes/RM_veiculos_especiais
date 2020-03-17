@@ -43,7 +43,7 @@
                                                 <p> Venda</p>
                                         </div>
                                         <div class="index-banner__texto">
-                                              <p> contato@rmveiculosespeciais.com.br</p>
+                                                <p> contato@rmveiculosespeciais.com.br</p>
                                         </div>
                                 </div>
                                 <div class="index-banner__carro"></div>
@@ -51,7 +51,35 @@
                 </contexto>
         </section>
 
-        
+        <section class="index-veiculoEmDestaque">
+                <contexto>
+                        <div class="titulo-linha">
+                                <div class="titulo-linha__linha"></div>
+                                <h1 class="titulo-linha__titulo">Veículos em Destaque</h1>
+                        </div>
+
+                        <div class="index-veiculoEmDestaque__container">
+                                <div class="index-veiculoEmDestaque__carro">
+                                        <div class="index-veiculoEmDestaque__imagem"  id="carro01"></div>
+                                        <h2>Volkswagen Karmann-ghia</h2>
+                                        <p>1.6 8v, Gasolina, 2P, Manual <br> 1969</p>
+                                        <a href="" class="botao-mais-detalhes">Mais Detalhes</a>
+                                </div>
+                                <div class="index-veiculoEmDestaque__carro">
+                                        <div class="index-veiculoEmDestaque__imagem" id="carro02"></div>
+                                        <h2>Chevrolet Opala</h2>
+                                        <p>4cc, Bancos de Corvin, 2,5<br> 1980</p>
+                                        <a href="" class="botao-mais-detalhes">Mais Detalhes</a>
+                                </div>
+                                <div class="index-veiculoEmDestaque__carro">
+                                        <div class="index-veiculoEmDestaque__imagem" id="carro03"></div>
+                                        <h2>Volkswagen Gol GTs</h2>
+                                        <p>Turbo forjado, xenon e alturas legalizadas<br> 1991</p>
+                                        <a href="" class="botao-mais-detalhes">Mais Detalhes</a>
+                                </div>
+                        </div>
+                </contexto>
+        </section>
 
 
         <script src="js/menu.js"></script>

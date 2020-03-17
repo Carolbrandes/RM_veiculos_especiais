@@ -1,0 +1,65 @@
+.index-veiculoEmDestaque{
+        padding: 2% 0;
+
+        &__container{
+                display: flex;
+                justify-content: space-between;
+                padding: 10% 0;
+
+                @media screen and (max-width: 768px){
+                        flex-direction: column;
+                        align-items: center;
+                }
+        }
+
+        &__imagem{
+                width: 100%;
+                height: 300px;
+                box-shadow: 1px 1px 2px #585858;
+                margin-bottom: 2%;
+        }
+
+        &__carro{
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                font-style: italic;
+
+                @media screen and (max-width: 768px){
+                       width: 90%;
+                       margin: 4% 0;
+                }
+
+                @media screen and (max-width: 414px){
+                       
+                        &:first-of-type{
+                                margin-top: 20%;
+                        }
+                 }
+
+                p{
+                        color: #363636;
+                }
+
+        }
+}
+
+#carro01{
+        background-image: url("../imagens/carro01.jpg");
+        background-size: cover;
+        background-position: center;
+}
+
+#carro02{
+        background-image: url("../imagens/carro02.jpg");
+        background-size: cover;
+        background-position: center;
+}
+
+#carro03{
+        background-image: url("../imagens/carro03.jpg");
+        background-size: cover;
+        background-position: center;
+}
