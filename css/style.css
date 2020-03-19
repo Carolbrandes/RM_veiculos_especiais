@@ -15,7 +15,6 @@ contexto {
   width: 90%;
   margin: 0 auto;
   padding: 0 2%;
-  border: 1px solid red;
   /* mobile*/ }
   @media screen and (max-width: 414px) {
     contexto {
@@ -168,6 +167,9 @@ header {
   @media screen and (max-width: 414px) {
     .titulo-linha__linha {
       top: 32px; } }
+  @media screen and (max-width: 375px) {
+    .titulo-linha__linha {
+      top: 40px; } }
 .titulo-linha__titulo {
   text-transform: uppercase;
   padding: 2% 3%;
@@ -311,6 +313,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    @media screen and (max-width: 375px) {
+      .form-contato__form {
+        padding: 30% 0; } }
     .form-contato__form input[type="text"], .form-contato__form input[type="email"] {
       width: 100%;
       height: 45px;
@@ -348,5 +353,40 @@ header {
     .form-contato__form button {
       max-width: 150px;
       padding: 3%; }
+
+.footer {
+  background-color: #252525;
+  color: #fff;
+  padding: 2% 0; }
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media screen and (max-width: 1024px) {
+      .footer__container {
+        flex-direction: column;
+        text-align: center; } }
+  .footer__menu {
+    width: 80%; }
+    .footer__menu a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0 2%; }
+    @media screen and (max-width: 1024px) {
+      .footer__menu {
+        width: 100%;
+        margin-bottom: 2%; } }
+    @media screen and (max-width: 414px) {
+      .footer__menu {
+        display: none; } }
+  .footer__texto {
+    width: 30%;
+    letter-spacing: 2px; }
+    @media screen and (max-width: 1024px) {
+      .footer__texto {
+        width: 100%; } }
+    @media screen and (max-width: 414px) {
+      .footer__texto {
+        font-size: 14px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -134,7 +134,7 @@
 
                                 <div class="w-50">
                                         <div class="w-50__elemento">
-                                                <input  type="email" name="email" placeholder="E-mail" required>
+                                                <input type="email" name="email" placeholder="E-mail" required>
                                         </div>
                                         <div class="w-50__elemento">
                                                 <input type="text" name="telefone" placeholder="Telefone" required>
@@ -149,6 +149,24 @@
                         </form>
                 </contexto>
         </section>
+
+
+        <footer class="footer">
+                <contexto>
+                        <div class="footer__container">
+                                <nav class="footer__menu">
+                                        <a href="index.php">Home</a>
+                                        <a href="">Venda</a>
+                                        <a href="">Galeria</a>
+                                        <a href="">Eventos</a>
+                                        <a href="">Sobre Nós</a>
+                                        <a href="">Contato</a>
+                                </nav>
+
+                                <p class="footer__texto">Todos os direitos reservados a <b>RM Veículos Especiais</b></p>
+                        </div>
+                </contexto>
+        </footer>
 
 
         <script src="js/menu.js"></script>
