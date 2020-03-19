@@ -30,7 +30,7 @@ header {
   /* ipad */
   /* mobile*/
   /* mobile iphone 5*/ }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     header {
       flex-wrap: wrap;
       justify-content: center; } }
@@ -57,13 +57,9 @@ header {
     width: 60%;
     display: flex;
     justify-content: flex-end;
-    /* ipad pro*/
     /* ipad */
     /* mobile*/ }
     @media screen and (max-width: 1024px) {
-      header .menu {
-        width: 70%; } }
-    @media screen and (max-width: 768px) {
       header .menu {
         width: 100%;
         justify-content: center;
@@ -115,7 +111,7 @@ header {
     padding: 2% 15% 3%;
     margin-bottom: 3%;
     display: flex; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       .index-banner__texto {
         position: relative;
         left: -40%; } }
@@ -152,7 +148,7 @@ header {
     background-image: url("../imagens/bg.jpg");
     background-size: contain;
     background-repeat: no-repeat; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       .index-banner__carro {
         width: 75%;
         background-size: cover; } }
@@ -166,9 +162,12 @@ header {
   background-color: #000;
   position: relative;
   top: 65px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     .titulo-linha__linha {
-      top: 40px; } }
+      top: 50px; } }
+  @media screen and (max-width: 414px) {
+    .titulo-linha__linha {
+      top: 32px; } }
 .titulo-linha__titulo {
   text-transform: uppercase;
   padding: 2% 3%;
@@ -194,7 +193,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 10% 0; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       .index-veiculoEmDestaque__container {
         flex-direction: column;
         align-items: center; } }
@@ -210,7 +209,7 @@ header {
     align-items: center;
     text-align: center;
     font-style: italic; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       .index-veiculoEmDestaque__carro {
         width: 90%;
         margin: 4% 0; } }
@@ -250,12 +249,12 @@ header {
 
 .index-servicosDepoimentos {
   display: flex; }
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 768px) {
     .index-servicosDepoimentos {
       flex-direction: column; } }
   .index-servicosDepoimentos contexto {
-    width: 70%; }
-    @media screen and (max-width: 1024px) {
+    width: 55%; }
+    @media screen and (max-width: 414px) {
       .index-servicosDepoimentos contexto {
         width: 90%; } }
   .index-servicosDepoimentos__single {
@@ -263,7 +262,7 @@ header {
     color: #fff;
     padding: 5% 0;
     font-size: 18px; }
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 768px) {
       .index-servicosDepoimentos__single {
         width: 100%; } }
     .index-servicosDepoimentos__single h2 {
@@ -273,7 +272,7 @@ header {
     .index-servicosDepoimentos__single a {
       max-width: 150px;
       margin: 0; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1024px) {
         .index-servicosDepoimentos__single a {
           margin: 5% 0; } }
   .index-servicosDepoimentos__servicos {
@@ -286,7 +285,7 @@ header {
     display: flex;
     align-items: flex-end;
     justify-content: space-between; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
       .index-servicosDepoimentos__flex {
         flex-direction: column;
         align-items: flex-start; } }
@@ -296,5 +295,58 @@ header {
   .index-servicosDepoimentos__autor {
     color: #000;
     padding-left: 20%; }
+
+.form-contato {
+  padding: 5% 0; }
+  .form-contato contexto {
+    width: 60%; }
+    @media screen and (max-width: 1024px) {
+      .form-contato contexto {
+        width: 70%; } }
+    @media screen and (max-width: 768px) {
+      .form-contato contexto {
+        width: 90%; } }
+  .form-contato__form {
+    padding: 15% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .form-contato__form input[type="text"], .form-contato__form input[type="email"] {
+      width: 100%;
+      height: 45px;
+      padding-left: 15px;
+      line-height: 20%;
+      font-size: 20px; }
+      .form-contato__form input[type="text"]:focus, .form-contato__form input[type="email"]:focus {
+        outline: 1px solid #f34e4e; }
+    .form-contato__form textarea {
+      width: 100%;
+      height: 300px;
+      padding: 15px;
+      resize: none;
+      font-size: 20px; }
+      .form-contato__form textarea:focus {
+        outline: 1px solid #f34e4e; }
+    .form-contato__form .w-100 {
+      width: 100%;
+      padding: 2% 0; }
+    .form-contato__form .w-50 {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 2% 0; }
+      @media screen and (max-width: 414px) {
+        .form-contato__form .w-50 {
+          flex-direction: column;
+          align-items: center; } }
+      .form-contato__form .w-50__elemento {
+        width: 48%; }
+        @media screen and (max-width: 414px) {
+          .form-contato__form .w-50__elemento {
+            width: 100%;
+            padding: 2% 0; } }
+    .form-contato__form button {
+      max-width: 150px;
+      padding: 3%; }
 
 /*# sourceMappingURL=style.css.map */

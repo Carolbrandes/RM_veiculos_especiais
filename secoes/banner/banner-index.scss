@@ -28,7 +28,7 @@
                 margin-bottom: 3%;
                 display: flex;
 
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 1024px) {
                         position: relative;
                         left: -40%;
                 }
@@ -91,7 +91,7 @@
                 background-size: contain;
                 background-repeat: no-repeat;
 
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 1024px) {
                         width: 75%;
                         background-size: cover;
                 }

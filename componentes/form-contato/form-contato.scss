@@ -1,0 +1,87 @@
+$largura: 100%;
+$espacamentoInterno: 15px;
+
+.form-contato{
+        padding: 5% 0;
+        
+        contexto{
+                width: 60%;
+
+                @media screen and (max-width: 1024px) {
+                        width: 70%;
+                }
+
+
+                @media screen and (max-width: 768px) {
+                        width: 90%;
+                }
+        }
+
+        &__form{
+
+                padding: 15% 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+               
+
+                input[type="text"], input[type="email"]{
+                        width: $largura;
+                        height: 45px;
+                        padding-left: $espacamentoInterno;
+                        line-height: 20%;
+                        font-size: 20px;
+
+                        &:focus{
+                             outline: 1px solid #f34e4e;
+
+                        }
+                }
+
+                textarea{
+                        width: $largura;
+                        height: 300px;
+                        padding: $espacamentoInterno;
+                        resize: none;
+                        font-size: 20px;
+
+                        &:focus{
+                                outline: 1px solid #f34e4e;
+                        }
+                }
+
+                .w-100{
+                        width: $largura;
+                        padding: 2% 0;
+                }
+
+                .w-50{
+                        width: $largura;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 2% 0;
+
+                        @media screen and (max-width: 414px) {
+                                flex-direction: column;
+                                align-items: center;
+                        }
+
+
+                        &__elemento{
+                                width: 48%;
+
+                                @media screen and (max-width: 414px) {
+                                      width: 100%;
+                                      padding: 2% 0;
+                                }
+                        }
+                }
+
+
+                button{
+                        max-width: 150px;
+                        padding: 3%;
+                }
+        }
+}
+

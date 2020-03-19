@@ -1,16 +1,15 @@
 .index-servicosDepoimentos{
         display: flex;
 
-        @media screen and (max-width: 414px) {
+        @media screen and (max-width: 768px) {
                flex-direction: column;
          }
 
         contexto{
-                width: 70%;
+                width: 55%;
 
-                @media screen and (max-width: 1024px) {
-                        width: 90%;
-                        
+                @media screen and (max-width: 414px) {
+                       width: 90%;
                 }
         }
        
@@ -21,7 +20,7 @@
                 padding: 5% 0;
                 font-size: 18px;
 
-                @media screen and (max-width: 414px) {
+                @media screen and (max-width: 768px) {
                        width: 100%;
                 }
 
@@ -38,7 +37,7 @@
                         max-width: 150px;
                         margin: 0;
 
-                        @media screen and (max-width: 768px) {
+                        @media screen and (max-width: 1024px) {
                                margin: 5% 0;    
                         }
                 }
@@ -61,7 +60,7 @@
                 align-items: flex-end;
                 justify-content: space-between;
 
-                @media screen and (max-width: 768px) {
+                @media screen and (max-width: 1024px) {
                         flex-direction: column;
                         align-items: flex-start;      
                 }

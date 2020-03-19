@@ -7,9 +7,13 @@
                 position: relative;
                 top: 65px;
 
-                @media screen and (max-width: 768px){
-                       top: 40px;
+                @media screen and (max-width: 1024px){
+                       top: 50px;
                 }
+
+                @media screen and (max-width: 414px) {
+                       top: 32px;
+                 }
         }
 
         &__titulo{
