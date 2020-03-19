@@ -12,22 +12,8 @@
 </head>
 
 <body>
-        <contexto>
-                <header>
-                        <img class="logo" src="imagens/logo.jpg" alt="logo RM Veículos Especiais">
-                        <nav class="menu-mobile">
-                                <img src="imagens/menu-button.png" alt="menu" title="menu">
-                        </nav>
-                        <nav class="menu">
-                                <a href="index.php">Home</a>
-                                <a href="">Venda</a>
-                                <a href="">Galeria</a>
-                                <a href="">Eventos</a>
-                                <a href="">Sobre Nós</a>
-                                <a href="">Contato</a>
-                        </nav>
-                </header>
-        </contexto>
+
+        <?php include_once "componentes/menu/menu.php"; ?>
 
         <section class="index-banner">
                 <contexto>
@@ -120,54 +106,10 @@
         </section>
 
 
-        <section class="form-contato">
-                <contexto>
-                        <div class="titulo-linha">
-                                <div class="titulo-linha__linha"></div>
-                                <h1 class="titulo-linha__titulo">Entre em Contato</h1>
-                        </div>
-
-                        <form class="form-contato__form" action="" method="post">
-                                <div class="w-100">
-                                        <input type="text" name="nome" placeholder="Nome" required>
-                                </div>
-
-                                <div class="w-50">
-                                        <div class="w-50__elemento">
-                                                <input type="email" name="email" placeholder="E-mail" required>
-                                        </div>
-                                        <div class="w-50__elemento">
-                                                <input type="text" name="telefone" placeholder="Telefone" required>
-                                        </div>
-                                </div>
-
-                                <div class="w-100">
-                                        <textarea name="mensagem" placeholder="Mensagem" required></textarea>
-                                </div>
-
-                                <button type="submit" name="acao" class="botao-mais-detalhes">Enviar</button>
-                        </form>
-                </contexto>
-        </section>
+      <?php include_once "componentes/form-contato/form-contato.php"; ?>
 
 
-        <footer class="footer">
-                <contexto>
-                        <div class="footer__container">
-                                <nav class="footer__menu">
-                                        <a href="index.php">Home</a>
-                                        <a href="">Venda</a>
-                                        <a href="">Galeria</a>
-                                        <a href="">Eventos</a>
-                                        <a href="">Sobre Nós</a>
-                                        <a href="">Contato</a>
-                                </nav>
-
-                                <p class="footer__texto">Todos os direitos reservados a <b>RM Veículos Especiais</b></p>
-                        </div>
-                </contexto>
-        </footer>
-
+       <?php include_once "componentes/footer/footer.php"; ?>
 
         <script src="js/menu.js"></script>
 
