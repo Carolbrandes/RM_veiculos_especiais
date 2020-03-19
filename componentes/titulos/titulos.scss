@@ -1,5 +1,3 @@
-
-
 .titulo-linha{
 
         &__linha{
@@ -28,4 +26,12 @@
                         font-size: 25px;
                  }
         }
+}
+
+
+.titulo-simples{
+        color: #fff;
+        text-transform: uppercase;
+        font-style: italic;
+        font-size: 25px;
 }

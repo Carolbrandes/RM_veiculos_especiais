@@ -1,0 +1,83 @@
+.index-servicosDepoimentos{
+        display: flex;
+
+        @media screen and (max-width: 414px) {
+               flex-direction: column;
+         }
+
+        contexto{
+                width: 70%;
+
+                @media screen and (max-width: 1024px) {
+                        width: 90%;
+                        
+                }
+        }
+       
+
+        &__single{
+                width: 50%;
+                color: #fff;
+                padding: 5% 0;
+                font-size: 18px;
+
+                @media screen and (max-width: 414px) {
+                       width: 100%;
+                }
+
+                h2{
+                        margin-bottom: 5%;
+                }
+
+
+                li{
+                        list-style-position: inside;
+                }
+
+                a{
+                        max-width: 150px;
+                        margin: 0;
+
+                        @media screen and (max-width: 768px) {
+                               margin: 5% 0;    
+                        }
+                }
+        }
+
+       &__servicos{
+               background-color: #242424;
+       }
+
+        &__depoimentos{
+                background-color: #eb2d2d;
+
+                blockquote{
+                        margin-bottom: 5%;
+                }
+        }
+
+        &__flex{
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+
+                @media screen and (max-width: 768px) {
+                        flex-direction: column;
+                        align-items: flex-start;      
+                }
+        }
+
+        &__flex-2{
+                display: flex;
+                justify-content: flex-start;
+        }
+
+        &__autor{
+                color:#000;
+                padding-left: 20%;
+        
+        }
+
+}
+
+

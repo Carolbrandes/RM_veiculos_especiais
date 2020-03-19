@@ -60,7 +60,7 @@
 
                         <div class="index-veiculoEmDestaque__container">
                                 <div class="index-veiculoEmDestaque__carro">
-                                        <div class="index-veiculoEmDestaque__imagem"  id="carro01"></div>
+                                        <div class="index-veiculoEmDestaque__imagem" id="carro01"></div>
                                         <h2>Volkswagen Karmann-ghia</h2>
                                         <p>1.6 8v, Gasolina, 2P, Manual <br> 1969</p>
                                         <a href="" class="botao-mais-detalhes">Mais Detalhes</a>
@@ -79,6 +79,44 @@
                                 </div>
                         </div>
                 </contexto>
+        </section>
+
+
+        <section class="index-servicosDepoimentos">
+                <section class="index-servicosDepoimentos__single index-servicosDepoimentos__servicos">
+                        <contexto>
+                                <h2 class="titulo-simples">Serviços</h2>
+
+                                <div class="index-servicosDepoimentos__flex">
+                                        <ul>
+                                                <li>Compra</li>
+                                                <li>Venda</li>
+                                                <li>Consignação</li>
+                                                <li>Consultoria de Veículos</li>
+                                                <li>Indicação de mecânicos e peças</li>
+                                        </ul>
+
+                                        <a href="" class="botao-mais-detalhes">Saiba Mais</a>
+                                </div>
+                        </contexto>
+                </section>
+
+                <section class="index-servicosDepoimentos__single index-servicosDepoimentos__depoimentos">
+                        <contexto>
+                                <h2 class="titulo-simples">Depoimentos</h2>
+
+                                <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nihil voluptatem quaerat suscipit non illo qui iure reiciendis eveniet nemo nobis expedita, reprehenderit id cumque consectetur esse fugiat ad aliquam?</blockquote>
+
+                                <div class="index-servicosDepoimentos__flex-2">
+                                        <div>
+                                                <img src="imagens/seta-esquerda.png" alt="">
+                                                <img src="imagens/seta-direita.png" alt="">
+                                        </div>
+                                        <p class="index-servicosDepoimentos__autor">Autor</p>
+                                </div>
+                        </contexto>
+
+                </section>
         </section>
 
 
