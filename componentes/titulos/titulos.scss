@@ -44,3 +44,16 @@
         font-style: italic;
         font-size: 25px;
 }
+
+.titulo-simples-preto{
+        font-size: 25px;
+        font-style: italic;
+
+        @media screen and (max-width: 1024px){
+                font-size: 20px;
+        }
+
+        @media screen and (max-width: 1024px){
+                font-size: 18px;
+        }
+}

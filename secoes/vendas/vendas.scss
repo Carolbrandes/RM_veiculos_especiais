@@ -1,0 +1,171 @@
+.venda{
+        display: flex;
+        justify-content: space-between;
+        padding: 10% 0;
+
+        @media screen and (max-width: 768px) {
+                flex-direction: column;
+                align-items: center;
+        }
+
+        &__filtros{
+                width: 15%;
+
+                @media screen and (max-width: 768px) {
+                       width: 60%;
+                       margin: 0 auto;
+                       padding: 5% 0;
+                }
+
+                @media screen and (max-width: 768px) {
+                        width: 80%;
+                        padding: 20% 0 2%;
+                 }
+        
+
+                h2{
+                        margin-bottom: 5%;
+
+                        @media screen and (max-width: 768px) {
+                                margin-bottom: 2%;
+                                text-align: center;
+                         }
+                }
+        }
+
+        &__filtro-range{
+                position: relative;
+                margin-bottom: 10%;
+
+                @media screen and (max-width: 768px) {
+                        margin-bottom: 5%;
+                 }
+         
+
+
+                input[type="range"]{
+                        display: none;
+                }
+
+                .input-range{
+
+                        width: 100%;
+                        
+                       &__barra{
+                               display:block;
+                                width: 100%;
+                                height: 20px;
+                                border: 1px solid #646464;
+                                border-radius: 3px;
+                        }
+
+                        &__progresso{
+                                width: 50%;
+                                height: 15px;
+                                background-image: linear-gradient(to bottom, #fff, #b4b4b4);
+                                position: absolute;
+                                top: 53px;
+                                left: 1px;
+
+                                @media screen and (max-width: 1024px) {
+                                        top: 40px;
+                                }
+
+                                @media screen and (max-width: 768px) {
+                                       top: 38px;
+                                 }
+                             
+                        }
+
+                        &__pointer{
+                                width: 15px;
+                                height: 25px;
+                                background-image: linear-gradient(to bottom, #5e5e5e, #414040);
+                                position: absolute;
+                                top: 46px;
+                                left: 50%;
+
+                                @media screen and (max-width: 1024px) {
+                                        top: 33px;
+                                }
+
+                                @media screen and (max-width: 768px) {
+                                        top: 32px;
+                                  }
+
+                                  @media screen and (max-width: 414px) {
+                                        top: 30px;
+                                  }
+                               
+                        
+                        }
+
+                        &__limites{
+                                display: flex;
+                                justify-content: space-between;
+                        }
+
+
+                }
+
+
+        }
+
+
+        &__filtro-ano{
+                input[type="checkbox"]{
+                        display: none;
+
+                        &:checked + .venda__checkbox > .checked{
+                                display: block;
+                        }
+                }
+
+                div{
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                }
+        }
+
+        &__checkbox{
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                border-radius: 2px;
+                border: 1px solid #646464;
+                margin-right: 2%;
+
+        }
+
+        .checked{
+                display: none;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #646464;
+                position: absolute;
+                left: 0.5%;
+                top: 7px;
+        }
+
+     
+        &__vitrine{
+                width: 80%;
+
+                @media screen and (max-width: 768px) {
+                        width: 100%;
+                 }
+         
+
+
+               .vitrine{
+                       padding: 0;
+               }
+
+        }
+}
+
+
+
+

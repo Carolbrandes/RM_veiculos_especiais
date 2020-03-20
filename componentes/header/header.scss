@@ -1,8 +1,24 @@
 header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1% 0;
+        border-bottom: 2px solid $vermelho2;
+
+        contexto{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1% 0;
+
+                @media screen and (max-width: 414px){
+                       padding: 3% 0;
+                }
+        }
+
+        .logo{
+                @media screen and (max-width: 414px){
+                       position: relative;
+                       left: 4%;
+                 }
+
+        }
 
           /* ipad */
           @media screen and (max-width: 1024px){
@@ -26,6 +42,8 @@ header{
                 /* mobile*/
                 @media screen and (max-width: 414px){
                         display: block;
+                        position: relative;
+                        left: -5%;
 
                         img{
                                 cursor: pointer;
@@ -62,6 +80,7 @@ header{
                         left:0;
                         padding: 2% 0;
                         background-color: $vermelho;
+                        z-index: 999;
                 }
 
                 a{
