@@ -438,10 +438,9 @@ header {
     width: 15%; }
     @media screen and (max-width: 768px) {
       .venda__filtros {
-        width: 60%;
-        margin: 0 auto;
-        padding: 5% 0; } }
-    @media screen and (max-width: 768px) {
+        width: 80%;
+        padding: 10% 0 2%; } }
+    @media screen and (max-width: 414px) {
       .venda__filtros {
         width: 80%;
         padding: 20% 0 2%; } }
@@ -472,27 +471,30 @@ header {
         height: 15px;
         background-image: linear-gradient(to bottom, #fff, #b4b4b4);
         position: absolute;
-        top: 53px;
+        top: 50px;
         left: 1px; }
         @media screen and (max-width: 1024px) {
           .venda__filtro-range .input-range__progresso {
-            top: 40px; } }
+            top: 35px; } }
         @media screen and (max-width: 768px) {
           .venda__filtro-range .input-range__progresso {
-            top: 38px; } }
+            top: 40px; } }
+        @media screen and (max-width: 414px) {
+          .venda__filtro-range .input-range__progresso {
+            top: 35px; } }
       .venda__filtro-range .input-range__pointer {
         width: 15px;
         height: 25px;
         background-image: linear-gradient(to bottom, #5e5e5e, #414040);
         position: absolute;
-        top: 46px;
+        top: 44px;
         left: 50%; }
         @media screen and (max-width: 1024px) {
           .venda__filtro-range .input-range__pointer {
-            top: 33px; } }
+            top: 30px; } }
         @media screen and (max-width: 768px) {
           .venda__filtro-range .input-range__pointer {
-            top: 32px; } }
+            top: 35px; } }
         @media screen and (max-width: 414px) {
           .venda__filtro-range .input-range__pointer {
             top: 30px; } }
@@ -530,5 +532,71 @@ header {
         width: 100%; } }
     .venda__vitrine .vitrine {
       padding: 0; }
+
+.veiculo {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 10% 0; }
+  @media screen and (max-width: 768px) {
+    .veiculo {
+      padding: 20% 0; } }
+  @media screen and (max-width: 414px) {
+    .veiculo {
+      padding: 30% 0;
+      flex-direction: column;
+      justify-content: center; } }
+  .veiculo__breadcrumb {
+    padding: 1%; }
+    .veiculo__breadcrumb a {
+      color: #000;
+      text-decoration: none; }
+    .veiculo__breadcrumb .breadcrumb-selected {
+      color: #eb2d2d;
+      font-weight: bold; }
+    @media screen and (max-width: 768px) {
+      .veiculo__breadcrumb {
+        font-size: 14px; } }
+  .veiculo-imagens {
+    width: 50%; }
+    @media screen and (max-width: 414px) {
+      .veiculo-imagens {
+        width: 100%; } }
+  .veiculo-imagem-principal {
+    width: 100%; }
+  .veiculo-galeria {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 5% auto; }
+    .veiculo-galeria__fotos {
+      display: flex;
+      justify-content: space-around; }
+      .veiculo-galeria__fotos img {
+        width: 30%;
+        height: 30%; }
+  .veiculo .seta-slider {
+    width: 20px;
+    height: 20px; }
+  .veiculo-descricao {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 0; }
+    @media screen and (max-width: 414px) {
+      .veiculo-descricao {
+        width: 100%; } }
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0; } }
+@media screen and (max-width: 414px) {
+  .footer {
+    position: initial; } }
 
 /*# sourceMappingURL=style.css.map */
