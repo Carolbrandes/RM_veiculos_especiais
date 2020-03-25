@@ -7,6 +7,10 @@ header{
                 align-items: center;
                 padding: 1% 0;
 
+                @media screen and (max-width: 1024px){
+                        width: 70%;
+                }
+
                 @media screen and (max-width: 414px){
                        padding: 3% 0;
                 }

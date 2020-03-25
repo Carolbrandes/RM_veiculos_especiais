@@ -2,6 +2,10 @@
 
         contexto{
                 width: 70%;
+
+                @media screen and (max-width: 424px) {
+                        width: 90%;
+                }
         }
 
         &__banner{
